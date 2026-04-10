@@ -1,0 +1,69 @@
+#include <iostream>
+   using namespace std;
+int main() {
+    // Data types
+    int trucks_to_free_rubbish;
+    int plot_to_be_cleared = 2;
+    int length_of_plot;
+    int width_of_plot;
+    float Volume_of_matiral_to_be_removed;
+    int one_cubic_meter_digging_cost = 125 ;
+    int one_cubic_meter_material_cost =    150;
+    int total_digging_cost ;
+    int total_material_cost;
+    int capacity_of_the_tack = 157;
+    float Trucks_needed_to_move_the_material;
+     int charge_of_every_truck_as_fixed = 1000;
+     int after_fixed_something_per_kilometer = 5 ;
+     int distance_of_market_from_his_house;
+     int total_charge_of_truck ;
+     int money_for_digging = 7500 ;
+     int money_for_transport;
+     int money_earn_back_by_matrial = 9000;
+     int fill_the_plot_with_soil_cost = 500;
+     int filling_cost_per_cubic_meter = 25;
+     int total_filling_cost ;
+     int loading_cost_per_cubic_meter = 2;
+     int total_loading_cost ;
+     int total_money_needed_to_done_this_work;
+    cout<< "length of plot"<<endl;
+    cin>>length_of_plot;
+    cout<<"width of plot"<<endl;
+    cin>>width_of_plot;
+    Volume_of_matiral_to_be_removed =  plot_to_be_cleared*length_of_plot*width_of_plot;// volume formula
+    cout<<"Volume_of_matiral_to_be_removed is"<<endl;;
+    cout<<Volume_of_matiral_to_be_removed<<endl;;
+     total_digging_cost = one_cubic_meter_material_cost     *Volume_of_matiral_to_be_removed;// digging cost
+     total_material_cost = one_cubic_meter_material_cost*Volume_of_matiral_to_be_removed;//metiral coat
+    cout<<"total matiral cost is :"<<endl;
+    cout<<total_material_cost<<endl;
+     cout<<"total digging cost is :"<<endl;
+    cout<<total_digging_cost<<endl;
+     Trucks_needed_to_move_the_material = Volume_of_matiral_to_be_removed/capacity_of_the_tack;//truck needed
+     cout<<"Trucks_needed_to_move_the_material :"<<endl;
+     cout<<Trucks_needed_to_move_the_material<<endl;;
+     total_charge_of_truck =  charge_of_every_truck_as_fixed + after_fixed_something_per_kilometer;//charges on truck
+     cout<<"total_charge_of_truck :"<<endl;
+     cout<<total_charge_of_truck<<endl;
+     cout<<" distance_of_market_from_his_house :"<<endl;
+     cin>> distance_of_market_from_his_house;
+     cout<<" money_for_digging :"<<endl;
+     cout<< money_for_digging<<endl;
+     money_for_transport =  total_charge_of_truck *  distance_of_market_from_his_house;//transport cost 
+     cout<<"money_for_transpoart  :" <<endl;
+     cout<<money_for_transport<<endl;
+     cout<<" money_earn_back_by_matrial  :"<<endl;
+     cout<< money_earn_back_by_matrial<<endl;
+     total_filling_cost = filling_cost_per_cubic_meter*Volume_of_matiral_to_be_removed;// filling cost
+     cout<<"total_filling_cost :"<<endl;
+     cout<<total_filling_cost<<endl;
+     total_loading_cost = loading_cost_per_cubic_meter * Volume_of_matiral_to_be_removed;
+     cout<<" total_loading_cost: " <<endl;
+     cout<< total_loading_cost <<endl;
+     
+     money_for_transport =  total_charge_of_truck *  distance_of_market_from_his_house;
+     cout<<"money_for_transpoart  :" <<endl;
+     cout<<money_for_transport<<endl;
+      total_money_needed_to_done_this_work = total_filling_cost + total_loading_cost + money_for_transport ;//money needed
+      cout<<"total_money_needed_to_done_this_work :"<<endl;
+      cout<<total_money_needed_to_done_this_work<<endl;
